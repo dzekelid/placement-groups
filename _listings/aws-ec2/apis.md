@@ -16,11 +16,22 @@ image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/l
 x-kinRank: "10"
 x-alexaRank: "0"
 tags: Placement Groups
-created: "2018-08-26"
-modified: "2018-08-26"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/placement-groups/master/_listings/aws-ec2/apis.md
 specificationVersion: "0.14"
 apis:
+- name: AWS EC2 API - Describe Placement Groups
+  x-api-slug: actiondescribeplacementgroups-get
+  description: Describes one or more of your placement groups.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Compute_AmazonEC2.png
+  humanURL: https://aws.amazon.com/ec2/
+  baseURL: :///
+  tags: Amazon Web Services, Compute, Stack Network, Stack, API Service Provider,
+    API Service Provider, API Provider, Profiles, Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/placement-groups/master/_listings/aws-ec2/actiondescribeplacementgroups-get-openapi.md
 - name: AWS EC2 API - Create Placement Group
   x-api-slug: actioncreateplacementgroup-get
   description: Creates a placement group that you launch cluster instances into.
@@ -47,6 +58,43 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/placement-groups/master/_listings/aws-ec2/actiondeleteplacementgroup-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/placement-groups/master/_listings/aws-ec2/actiondeleteplacementgroup-get-openapi.md
+- name: AWS EC2 API - Create Placement Group
+  x-api-slug: actioncreateplacementgroup-get
+  description: Creates a placement group that you launch cluster instances into.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Compute_AmazonEC2.png
+  humanURL: https://aws.amazon.com/ec2/
+  baseURL: :///
+  tags: Amazon Web Services, Compute, Stack Network, Stack, API Service Provider,
+    API Service Provider, API Provider, Profiles, Relative Data, Service API
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/placement-groups/master/_listings/aws-ec2/actioncreateplacementgroup-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/placement-groups/master/_listings/aws-ec2/actioncreateplacementgroup-get-openapi.md
+- name: AWS EC2 API - Delete Placement Group
+  x-api-slug: actiondeleteplacementgroup-get
+  description: Deletes the specified placement group.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Compute_AmazonEC2.png
+  humanURL: https://aws.amazon.com/ec2/
+  baseURL: :///
+  tags: Amazon Web Services, Compute, Stack Network, Stack, API Service Provider,
+    API Service Provider, API Provider, Profiles, Relative Data, Service API
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/placement-groups/master/_listings/aws-ec2/actiondeleteplacementgroup-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/placement-groups/master/_listings/aws-ec2/actiondeleteplacementgroup-get-openapi.md
+- name: AWS EC2 API - Describe Placement Groups
+  x-api-slug: actiondescribeplacementgroups-get
+  description: Describes one or more of your placement groups.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Compute_AmazonEC2.png
+  humanURL: https://aws.amazon.com/ec2/
+  baseURL: :///
+  tags: Amazon Web Services, Compute, Stack Network, Stack, API Service Provider,
+    API Service Provider, API Provider, Profiles, Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/placement-groups/master/_listings/aws-ec2/actiondescribeplacementgroups-get-openapi.md
 - name: AWS EC2 API - Create Placement Group
   x-api-slug: actioncreateplacementgroup-get
   description: Creates a placement group that you launch cluster instances into.

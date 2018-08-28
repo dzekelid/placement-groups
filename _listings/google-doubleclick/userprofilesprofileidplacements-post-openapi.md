@@ -1,9 +1,11 @@
+---
 swagger: "2.0"
 x-collection-name: Google Doubleclick
-x-complete: 1
+x-complete: 0
 info:
-  title: Google Doubleclick Merged API
+  title: Google Doubleclick API Insert Placement
   version: 1.0.0
+  description: Inserts a new placement.
 schemes:
 - http
 produces:
@@ -471,66 +473,17 @@ paths:
       tags:
       - Advertising
       - Placement
-    put:
-      summary: Update Placement
-      description: Updates an existing placement.
-      operationId: dfareporting.placements.update
-      x-api-path-slug: userprofilesprofileidplacements-put
-      parameters:
-      - in: body
-        name: body
-        schema:
-          $ref: '#/definitions/holder'
-      - in: path
-        name: profileId
-        description: User profile ID associated with this request
-      responses:
-        200:
-          description: OK
-      tags:
-      - Advertising
-      - Placement
-  /userprofiles/{profileId}/placements/generatetags:
-    post:
-      summary: Generate Placement Tag
-      description: Generates tags for a placement.
-      operationId: dfareporting.placements.generatetags
-      x-api-path-slug: userprofilesprofileidplacementsgeneratetags-post
-      parameters:
-      - in: query
-        name: campaignId
-        description: Generate placements belonging to this campaign
-      - in: query
-        name: placementIds
-        description: Generate tags for these placements
-      - in: path
-        name: profileId
-        description: User profile ID associated with this request
-      - in: query
-        name: tagFormats
-        description: Tag formats to generate for these placements
-      responses:
-        200:
-          description: OK
-      tags:
-      - Advertising
-      - Placement
-  /userprofiles/{profileId}/placements/{id}:
-    get:
-      summary: Get Placement
-      description: Gets one placement by ID.
-      operationId: dfareporting.placements.get
-      x-api-path-slug: userprofilesprofileidplacementsid-get
-      parameters:
-      - in: path
-        name: id
-        description: Placement ID
-      - in: path
-        name: profileId
-        description: User profile ID associated with this request
-      responses:
-        200:
-          description: OK
-      tags:
-      - Advertising
-      - Placement
+x-streamrank:
+  polling_total_time_average: 0
+  polling_size_download_average: 0
+  streaming_total_time_average: 0
+  streaming_size_download_average: 0
+  change_yes: 0
+  change_no: 0
+  time_percentage: 0
+  size_percentage: 0
+  change_percentage: 0
+  last_run: ""
+  days_run: 0
+  minute_run: 0
+---
